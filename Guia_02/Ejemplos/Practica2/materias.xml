@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<materias>
+  <materia>
+    <codigo>LIS</codigo>
+    <nombre>Lenguajes interpretados en el servidor</nombre>
+    <uvs>4</uvs>
+    <nota>8</nota>
+  </materia>
+  <materia>
+    <codigo>LIC</codigo>
+    <nombre>Lenguajes interpretados en el cliente</nombre>
+    <uvs>3</uvs>
+    <nota>10</nota>
+  </materia>
+<materia><codigo>CVV</codigo><nombre>Calculo de Varias Variables</nombre><uvs>4</uvs><nota>10</nota></materia></materias>
