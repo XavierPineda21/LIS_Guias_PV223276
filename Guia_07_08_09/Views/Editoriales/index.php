@@ -33,10 +33,10 @@
                                 <td><?= $editorial['nombre_editorial']?></td>
                                 <td><?= $editorial['contacto']?></td>
                                 <td><?= $editorial['telefono']?></td>
-                                <td></td>
+                                <td><a href="<?= PATH.'/editoriales/delete/'.$editorial['codigo_editorial']?>" class="btn btn-danger">Eliminar</a></td>
                             </tr>
 
-                        <?php endforeach ?>
+                        <?php endforeach; ?>
                         
                     </tbody>
                 </table>

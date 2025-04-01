@@ -2,6 +2,9 @@
 include_once 'Controllers/EditorialesController.php';
 include_once 'Controllers/IndexController.php';
 
+
+const PATH='/Guia_07_08_09';
+
 $url = $_SERVER['REQUEST_URI'];
 $slices=explode('/',$url);
 $controller = empty($slices[2])?"IndexController":$slices[2]."Controller";
