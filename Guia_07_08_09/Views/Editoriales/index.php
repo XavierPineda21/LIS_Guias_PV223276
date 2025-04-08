@@ -14,7 +14,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <a class="btn btn-primary" href="#">Nuevo Editorial</a>
+                <a class="btn btn-primary" href="Editoriales/create">Nuevo Editorial</a>
                 <br><br>
                 <table class="table table-striped table-bordered" id="tabla">
                     <thead class="table-dark">
@@ -27,17 +27,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach($editoriales as $editorial): ?>
-                            <tr>
-                                <td><?= $editorial['codigo_editorial']?></td>
-                                <td><?= $editorial['nombre_editorial']?></td>
-                                <td><?= $editorial['contacto']?></td>
-                                <td><?= $editorial['telefono']?></td>
-                                <td><a href="<?= PATH.'/editoriales/delete/'.$editorial['codigo_editorial']?>" class="btn btn-danger">Eliminar</a></td>
-                            </tr>
-
-                        <?php endforeach; ?>
-                        
+                        <?php foreach($editoriales as $editorial):?>
+                                <tr>
+                                    <td><?=$editorial['codigo_editorial']?></td>
+                                    <td><?=$editorial['nombre_editorial']?></td>
+                                    <td><?=$editorial['contacto']?></td>
+                                    <td><?=$editorial['telefono']?></td>
+                                    <td><a href="<?= PATH.'/Editoriales/delete/'.$editorial['codigo_editorial']?>" class="btn btn-danger">Eliminar</a>
+                                    <a href="<?= PATH.'/Editoriales/edit/'.$editorial['codigo_editorial'] ?>" class="btn btn-warning">Editar</a></td>
+                                </tr>
+                        <?php endforeach?>
                     </tbody>
                 </table>
             </div>

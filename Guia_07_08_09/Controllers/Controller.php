@@ -1,18 +1,18 @@
-<?php
+<?php  
 abstract class Controller{
-    public function render($view, $viewBag=[]){
+    public function render($view, $viewbag=[]){
         $file="Views/".static::class."/$view";
-        $file = str_replace("Controller","",$file);
-        if(is_file($file)){
-            extract($viewBag);
-            ob_start();//Abre el bufer
+        $file=str_replace("Controller","",$file);        
+        if (is_file($file)){
+            extract($viewbag);
+            ob_start();//abre el bufer
             require($file);
             $content=ob_get_contents();
-            ob_end_clean();//Cerrando el bufer
-            echo $content;
+            ob_end_clean();//cerrar el bufer
+            echo $content;        
         }
         else{
-            echo "<h1>View not found</h1>";
+            echo "<h1>Vista no encontrada</h1>";
         }
     }
 }

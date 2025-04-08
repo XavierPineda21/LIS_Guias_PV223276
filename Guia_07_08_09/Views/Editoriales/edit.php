@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuevo Editorial</title>
+    <title>Editar Editorial</title>
     <?php include  'Views/cabecera.php'; ?>
 </head>
 <body>
 <?php include 'Views/menu.php'; ?>
     <div class="container mt-4">
         <div class="row">
-            <h3>Nuevo Editorial</h3>
+            <h3>Editar Editorial</h3>
         </div>
         <div class="row">
             <div class="col-md-7">
-                <form role="form" action=" <?= PATH?>/Editoriales/insert" method="POST">
+                <form role="form" action=" <?= PATH?>/Editoriales/update" method="POST">
                     <?php 
                         if(isset($errores)){
                             echo "<div class= 'alert alert-danger'>";
@@ -51,6 +51,5 @@
             </div>
         </div>
     </div>
-
-</body>
+    </body> 
 </html>
