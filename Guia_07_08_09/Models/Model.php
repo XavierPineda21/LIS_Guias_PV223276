@@ -1,9 +1,9 @@
 <?php
 abstract class Model{
-    private $host = 'localhost'; 
-    private $user = 'root';            
-    private $password = '';       
-    private $db_name = 'inventario_libros';
+    private $host = 'sql203.infinityfree.com'; 
+    private $user = 'if0_38215808';            
+    private $password = 'ChispitaAPV99';       
+    private $db_name = 'if0_38215805_inventario_libros';
     protected $conn;
 
     protected function open_db(){
